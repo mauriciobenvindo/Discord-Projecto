@@ -30,14 +30,14 @@ body {
 #container{
   width: 100%;
   max-width: 588px;
-  margin: 56px  auto 0px auto;
+  margin: 32px  auto 0px auto;
   padding: 0 24px;
 }
 /*Switch*/
 #switch{
   position: relative;
   width: 64px;
-  margin: 4px auto;
+  margin: 2px auto;
 }
 #switch button{
   width: 32px;
@@ -74,11 +74,12 @@ body {
   padding: 24px;
 }
 #profil img{
-  width: 112px;
+  width: 110px;
+  border-radius: 50%;
 }
 #profil{
   font-weight: 500;
-  line-height: 24px;
+  line-height: 22px;
 }
 ul{
   list-style: none;
@@ -132,6 +133,10 @@ footer{
   padding: 24px 0;
   text-align: center;
 }
+footer a:hover{
+  color: violet;
+  transition: 0.2s;
+}
 
 /*Media Query*/
 @media (min-width:700px){
@@ -139,7 +144,7 @@ footer{
     --background:url(./assets/bg-desktop.jpg);
   }
   .light{
-    --background:url(.assets/bg-desktop-light.jpg);
+    --background:url(./assets/bg-desktop-light.jpg);
   }
 }
 /*Animation*/
